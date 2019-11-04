@@ -10,3 +10,8 @@ header {
 .header_content {
   text-align: center;
 }
+
+.header_content h2 {
+  position: relative;
+  bottom: 50px;
+}
