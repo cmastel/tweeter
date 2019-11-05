@@ -1,0 +1,60 @@
+.tweets {
+  padding: 0.5em;
+  margin-bottom: 50px;
+  border: solid;
+  border-width: medium;
+}
+
+.tweets header {
+  height: 50px;
+}
+
+#avatar {
+  float: left;
+}
+
+#avatar img {
+  width: 60px;
+  height: 60px;
+}
+
+#name {
+  padding-left: 10px;
+  float: left;
+  font-weight: 300;
+}
+
+#username {
+  float: right;
+  font-weight: 100;
+  font-size: 18px;
+  display: none;
+}
+
+.tweets p {
+  font-weight: 600;
+  height: 100px;
+  border-bottom: solid;
+  border-width: thin;
+}
+
+.tweets footer {
+  font-size: 12px;
+}
+
+#flag {
+  float: right;
+  color: #0C7BDC;
+  padding-right: 10px;
+}
+
+#retweet {
+  float: right;
+  color: #0C7BDC;
+  padding-right: 10px;
+}
+
+#heart {
+  float: right;
+  color: #0C7BDC;
+}
