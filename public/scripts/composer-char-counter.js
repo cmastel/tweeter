@@ -7,6 +7,7 @@ $(document).ready(function() {
     if (remainingChars < 0) {
       $( this ).parent().children( ".counter" ).css("color", "red");
     }
+    
   });
 
 });
