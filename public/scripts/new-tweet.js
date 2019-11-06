@@ -1,17 +1,18 @@
 $(document).ready(function() {
 
-  $("form, .new-tweet").submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
     
-    console.log('Form submitted, performing ajax call...', event);
+    console.log('Form submitted, performing ajax call...', $( this ).serialize());
     $.ajax({
       method: 'POST',
       url: '/tweets/',
-      data: $( this ).serialize()
+      data: $( this ).serialize(),
+      success: (data) => console.log( "data saved", data)
     })
-    .done(function() {
-      alert( "data saved");
-    });
+    // .done(function(err,test,data) {
+    //   console.log( "data saved", data.body);
+    // });
   })
 
 });

@@ -78,6 +78,15 @@ $(document).ready(function() {
   $('#tweets-container').append($tweet);
 
   
+  const loadTweets = function() {
+    $.ajax({
+      method: 'GET',
+      url: '/tweets/',
+      dataType: 'json',
+      success: (data) => console.log('GET:', data)
+    })
+  }
 
+  loadTweets();
 
 });
