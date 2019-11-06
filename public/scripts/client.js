@@ -18,34 +18,7 @@ const tweetData = {
 
 
  const createTweetElement = function(tweetOjbect) {
-  const currentDate = new Date();
-  const previousDate = currentDate - (10 * 1000)
-  // const timeAgo = currentDate - previousDate;
-  const elapsedTime = currentDate - tweetOjbect.created_at;
-  const seconds = Math.floor(elapsedTime / 1000);
-  const minutes = seconds / 60;
-  const hours = minutes / 60;
-  const days = hours / 24;
-  const years = days / 365;
-  let timeAgo = 0;
-  let time = '';
-  if (years >= 1) {
-    timeAgo = years;
-    time = 'years';
-  } else if (days >= 1) {
-    timeAgo = days;
-    time = 'days';
-  } else if (hours >= 1) {
-    timeAgo = hours;
-    time = 'hours';
-  } else if (minutes >= 1) {
-    timeAgo = minutes;
-    time = 'minutes'
-  } else {
-    timeAgo = seconds;
-    time = 'seconds';
-  }
-  
+  const deltaTime = timeAgo(tweetOjbect.created_at)
   const markup = `
   <article class="tweets">
     <header>
@@ -59,7 +32,7 @@ const tweetData = {
       ${tweetOjbect.content.text}
     </p>
     <footer>
-      ${Math.floor(timeAgo)} ${time} ago
+      ${Math.floor(deltaTime[0])} ${deltaTime[1]} ago
       <div id="heart">
         <i class="fa fa-heart"></i>
       </div>
@@ -75,13 +48,32 @@ const tweetData = {
   return markup;
  }
 
+ const timeAgo = function(originalDate) {
+  const currentDate = new Date();
+  const elapsedTime = currentDate - originalDate;
+  const seconds = Math.floor(elapsedTime / 1000);
+  const minutes = seconds / 60;
+  const hours = minutes / 60;
+  const days = hours / 24;
+  const years = days / 365;
+  let timeAgo = [];
+  if (years >= 1) {
+    timeAgo = [years, 'years'];
+  } else if (days >= 1) {
+    timeAgo = [days, 'days'];
+  } else if (hours >= 1) {
+    timeAgo = [hours, 'hours'];
+  } else if (minutes >= 1) {
+    timeAgo = [minutes, 'minutes'];
+  } else {
+    timeAgo = [seconds, 'seconds'];
+ }
+ return timeAgo;
+}
 
  $(document).ready(function() {
 
-
  const $tweet = createTweetElement(tweetData);
- console.log($tweet);
  $('#tweets-container').append($tweet);
-
 
 });
