@@ -5,9 +5,11 @@ $(document).ready(function() {
     
     const userInput = $( this ).serialize().slice(5);
     if (!userInput) {
-      alert('There was no content in your tweet.');
+      $("#error-message").slideDown("medium");
+      $("#error-message").text('🚨 There was no content in your tweet. 🚨');
     } else if (userInput.length > 140) {
-      alert('Your tweet is longer than 140 characters.');
+      $("#error-message").slideDown("medium");
+      $("#error-message").text('🚨 Your tweet is longer than 140 characters. 🚨');
     } else {
       $.ajax({
         method: 'POST',
@@ -16,6 +18,9 @@ $(document).ready(function() {
         success: () => {
           this.reset();
           loadTweets();
+          // $("#error-message").css("display", "none");
+          $("#error-message").slideUp("medium");
+
         }
       })
     }

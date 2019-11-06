@@ -29,3 +29,15 @@ textarea {
   font-weight: 600;
   resize: none;
 }
+
+#error-message {
+  width: 75%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: red;
+  text-align: center;
+  display: none;
+  color: red;
+}
