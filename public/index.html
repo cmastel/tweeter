@@ -7,12 +7,14 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,600,600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
      
     <!-- External JS -->
@@ -21,6 +23,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/hover-effects.js"></script>
 
 
   </head>
@@ -32,7 +35,7 @@
       <div id="new_tweet"><strong>Write</strong> a New Tweet</div>
     </nav>
 
-    <header>
+    <header class="id_header">
         <div class="header_content">
             <img src="/images/profile-hex.png"> 
         </div>
@@ -52,10 +55,34 @@
           <span class="counter">140</span>
         </form>
       </section>
-      <section class="tweets">
+      
+      <section id="tweets-container">
+        <!-- <article class="tweets">
+          <header>
+            <div id="avatar">
+                <img src="/images/profile-hex.png">
+            </div>
+            <div id="name">Username</div>
+            <div id="username">@username</div>
+          </header>
+          <p>
+            This is the tweet
+          </p>
+          <footer>
+            10 days ago
+            <div id="heart">
+              <i class='fa fa-heart'></i>
+            </div>
+            <div id="retweet">
+                <i class='fa fa-retweet'></i>
+            </div>
+            <div id="flag">
+                <i class='fa fa-flag'></i>
+            </div>
+          </footer>
+        </article> -->
+      </section> 
 
-        
-      </section>
     </main>
 
   </body>

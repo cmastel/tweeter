@@ -75,5 +75,13 @@ const tweetData = {
   return markup;
  }
 
+
+ $(document).ready(function() {
+
+
  const $tweet = createTweetElement(tweetData);
  console.log($tweet);
+ $('#tweets-container').append($tweet);
+
+
+});
