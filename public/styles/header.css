@@ -3,8 +3,8 @@
   background-image: url("/images/p1.png");
   height: 400px;
   margin-top: 120px;
+  margin-bottom: 50px;
   z-index: 2;
-
 }
 
 .header_content {

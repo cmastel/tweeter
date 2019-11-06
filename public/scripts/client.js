@@ -4,6 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
  const createTweetElement = function(tweetOjbect) {
   const deltaTime = timeAgo(tweetOjbect.created_at)
@@ -13,11 +18,11 @@
       <div id="avatar">
         <img src="${tweetOjbect.user.avatars}">
       </div>
-      <div id="name">${tweetOjbect.user.name}</div>
-      <div id="username">${tweetOjbect.user.handle}</div>
+      <div id="name">${escape(tweetOjbect.user.name)}</div>
+      <div id="username">${escape(tweetOjbect.user.handle)}</div>
     </header>
     <p>
-      ${tweetOjbect.content.text}
+      ${escape(tweetOjbect.content.text)}
     </p>
     <footer>
       ${Math.floor(deltaTime[0])} ${deltaTime[1]} ago

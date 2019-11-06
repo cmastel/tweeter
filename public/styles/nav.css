@@ -23,3 +23,11 @@ span {
   font-size: 24px;
   float: right;
 }
+
+#show-new-tweet {
+  color: red;
+  float: right;
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
