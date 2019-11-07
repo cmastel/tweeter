@@ -1,4 +1,3 @@
-  
 const loadTweets = function() {
   $.ajax({
     method: 'GET',

@@ -59,3 +59,11 @@
   float: right;
   color: #0C7BDC;
 }
+
+.tweets:hover {
+  box-shadow: 5px 5px 5px #0C7BDC
+}
+
+.tweets:hover #username {
+  display: block;
+}
