@@ -1,0 +1,47 @@
+.id_header {
+  background-color: #FFC20A;
+  background-image: url("/images/p1.png");
+  height: 400px;
+  /* margin-top: 120px; */
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.header_content {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.header_content h2 {
+  position: relative;
+  bottom: 70px;
+}
+
+.id_header > .show-new-tweet {
+  position: relative;
+  bottom: 425px;
+  right: 20px;
+}
+
+#show-tweet-header {
+  color: red;
+  float: right;
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+
+@media only screen and (min-width: 960px) {
+  .id_header {
+    width: 40%;
+    margin-top: 160px;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .id_header > .show-new-tweet {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header2.css.map */
