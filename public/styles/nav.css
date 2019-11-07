@@ -31,3 +31,7 @@ span {
   top: 40px;
   left: 100px;
 }
+
+#show-new-tweet:hover {
+  box-shadow: 0 0 15px #FFFFFF;
+}

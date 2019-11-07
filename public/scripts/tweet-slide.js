@@ -8,13 +8,5 @@ $(document).ready(function() {
       }   
   );
 
-  $("#show-new-tweet").hover(
-    function() {
-      $("#show-new-tweet").css("box-shadow", "0 0 15px #ffffff");
-    },
-    function() {
-      $("#show-new-tweet").css("box-shadow", "none");
-    }
-  )
 
 });
