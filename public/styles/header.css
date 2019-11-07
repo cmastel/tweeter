@@ -16,3 +16,12 @@
   position: relative;
   bottom: 70px;
 }
+
+@media only screen and (min-width: 960px) {
+  .id_header {
+    width: 40%;
+    margin-top: 160px;
+    margin-left: 5%;
+    float: left;
+  }
+}
