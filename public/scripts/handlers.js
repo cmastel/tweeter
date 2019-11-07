@@ -1,3 +1,6 @@
+// saves a new tweet to the "database"
+// if there is an invalid input, a warning is shown and the input
+// is not saved to the database
 const newTweet = function(event) {
   event.preventDefault();
   const userInput = $( this ).serialize().slice(5);
@@ -22,6 +25,8 @@ const newTweet = function(event) {
   }
 }
 
+// show the number of characters remaining in a new tweet
+// if the input is greater than 140, the value goes red
 const remainingCharCounter = function() {
   let remainingChars = 140 - $( this ).val().length;
   $( this ).parent().children( ".counter" ).text( remainingChars );
