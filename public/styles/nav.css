@@ -11,6 +11,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 3;
+  display: none;
 }
 
 span {
@@ -34,4 +35,10 @@ span {
 
 #show-new-tweet:hover {
   box-shadow: 0 0 15px #FFFFFF;
+}
+
+@media only screen and (min-width: 960px) {
+  nav {
+    display: block;
+  }
 }

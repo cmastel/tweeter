@@ -8,5 +8,12 @@ $(document).ready(function() {
       }   
   );
 
+  $("#show-tweet-header").click(
+    function() {
+      $(".new-tweet").slideDown("slow");
+      $("#show-new-tweet").css("transform", "translateY(4px)");
+      $("textarea").focus();
+      }   
+  );
 
 });
