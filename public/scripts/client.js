@@ -13,7 +13,7 @@ $(document).ready(function() {
   // show new tweet slider
   $("#nav-arrows").click(
     function() {
-      $(".new-tweet").toggle("slow");
+      $(".new-tweet").slideToggle("slow");
       $("#show-new-tweet").css("transform", "translateY(4px)");
       $("textarea").focus();
       }   
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   $("#header-arrows").click(
     function() {
-      $(".new-tweet").toggle("slow");
+      $(".new-tweet").slideToggle("slow");
       $("#show-new-tweet").css("transform", "translateY(4px)");
       $("textarea").focus();
       }   

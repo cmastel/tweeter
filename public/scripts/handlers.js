@@ -17,7 +17,7 @@ const newTweet = function(event) {
       data: $( this ).serialize(),
       success: () => {
         this.reset();
-        loadTweets();
+        loadTweets(true); // the optional parameter true ensures only the new tweet is prepended to the list
         $("#error-message").slideUp("medium");
 
       }

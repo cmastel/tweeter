@@ -48,15 +48,9 @@ const createTweetElement = function(tweetOjbect) {
    </p>
    <footer>
      ${Math.floor(deltaTime[0])} ${deltaTime[1]} ago
-     <div id="heart">
        <i class="fa fa-heart"></i>
-     </div>
-     <div id="retweet">
        <i class="fa fa-retweet"></i>
-     </div>
-     <div id="flag">
        <i class="fa fa-flag"></i>
-     </div>
    </footer>
  </article>
  `
@@ -92,3 +86,14 @@ const loadTweets = function(last=false) {
    })
  }
 }
+
+
+{/* <div id="heart">
+       <i class="fa fa-heart"></i>
+     </div>
+     <div id="retweet">
+       <i class="fa fa-retweet"></i>
+     </div>
+     <div id="flag">
+       <i class="fa fa-flag"></i>
+     </div> */}

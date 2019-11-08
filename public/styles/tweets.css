@@ -43,19 +43,19 @@
   font-size: 12px;
 }
 
-#flag {
+.fa-flag {
   float: right;
   color: #0C7BDC;
   padding-right: 10px;
 }
 
-#retweet {
+.fa-retweet {
   float: right;
   color: #0C7BDC;
   padding-right: 10px;
 }
 
-#heart {
+.fa-heart {
   float: right;
   color: #0C7BDC;
 }
