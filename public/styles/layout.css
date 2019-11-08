@@ -29,6 +29,7 @@ body {
   z-index: 1;
 }
 
+/* style and position of the return to top button */
 .fa-chevron-circle-up {
   position: fixed;
   bottom: 50px;
