@@ -29,6 +29,19 @@ body {
   z-index: 1;
 }
 
+.fa-chevron-circle-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 75px;
+  color: #FFC20A;
+  display: none;
+}
+
+.fa-chevron-circle-up:hover {
+  color: #0C7BDC;
+}
+
 
 @media only screen and (min-width: 960px) {
   .container {
