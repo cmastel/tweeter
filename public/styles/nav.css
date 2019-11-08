@@ -20,12 +20,17 @@ span {
   float: left;
 }
 
-#new_tweet {
+nav > .show-new-tweet {
+  position: relative;
+  float: right;
+}
+
+.new-tweet-words{
   font-size: 24px;
   float: right;
 }
 
-#show-new-tweet {
+#nav-arrows {
   color: red;
   float: right;
   position: relative;
@@ -33,7 +38,7 @@ span {
   left: 100px;
 }
 
-#show-new-tweet:hover {
+#nav-arrows:hover {
   box-shadow: 0 0 15px #FFFFFF;
 }
 
@@ -42,3 +47,4 @@ span {
     display: block;
   }
 }
+

@@ -11,17 +11,17 @@ $(document).ready(function() {
   $("textarea").on('keyup', remainingCharCounter);
   
   // show new tweet slider
-  $("#show-new-tweet").click(
+  $("#nav-arrows").click(
     function() {
-      $(".new-tweet").slideDown("slow");
+      $(".new-tweet").toggle("slow");
       $("#show-new-tweet").css("transform", "translateY(4px)");
       $("textarea").focus();
       }   
   );
 
-  $("#show-tweet-header").click(
+  $("#header-arrows").click(
     function() {
-      $(".new-tweet").slideDown("slow");
+      $(".new-tweet").toggle("slow");
       $("#show-new-tweet").css("transform", "translateY(4px)");
       $("textarea").focus();
       }   
