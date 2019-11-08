@@ -37,15 +37,11 @@ const createTweetElement = function(tweetOjbect) {
  const markup = `
  <article class="tweets">
    <header>
-     <div id="avatar">
-       <img src="${tweetOjbect.user.avatars}">
-     </div>
-     <div id="name">${escape(tweetOjbect.user.name)}</div>
-     <div id="username">${escape(tweetOjbect.user.handle)}</div>
+    <img src="${tweetOjbect.user.avatars}">
+    <div id="name">${escape(tweetOjbect.user.name)}</div>
+    <div id="username">${escape(tweetOjbect.user.handle)}</div>
    </header>
-   <p>
-     ${escape(tweetOjbect.content.text)}
-   </p>
+   <p>${escape(tweetOjbect.content.text)}</p>
    <footer>
      ${Math.floor(deltaTime[0])} ${deltaTime[1]} ago
        <i class="fa fa-heart"></i>
@@ -86,14 +82,3 @@ const loadTweets = function(last=false) {
    })
  }
 }
-
-
-{/* <div id="heart">
-       <i class="fa fa-heart"></i>
-     </div>
-     <div id="retweet">
-       <i class="fa fa-retweet"></i>
-     </div>
-     <div id="flag">
-       <i class="fa fa-flag"></i>
-     </div> */}

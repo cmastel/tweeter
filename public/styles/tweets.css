@@ -9,11 +9,8 @@
   height: 50px;
 }
 
-#avatar {
+.tweets img {
   float: left;
-}
-
-#avatar img {
   width: 60px;
   height: 60px;
 }
@@ -37,6 +34,7 @@
   height: 100px;
   border-bottom: solid;
   border-width: thin;
+  word-wrap: break-word;
 }
 
 .tweets footer {
