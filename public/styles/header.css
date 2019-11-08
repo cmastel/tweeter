@@ -42,6 +42,34 @@
   left: 100px;
 }
 
+@media only screen and (max-width: 420px) {
+  .header_content img {
+    width: 75px;
+    position: relative;
+    left: 20px;
+  }
+
+  .header_content h2 {
+    font-size: .9em;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+  }
+
+  div.new-tweet-words {
+    display: none;
+  }
+
+  .avatar_header i.fa-angle-double-down {
+    display: block;
+    text-align: right;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+  }
+
+}
+
 
 @media only screen and (min-width: 960px) {
   .avatar_header {
@@ -53,10 +81,9 @@
   }
 
   .header_content img {
-    max-width: 90%;
-    max-height: 90%;
+    width: 230px;
     position: relative;
-    left: 15px;
+    left: 10px;
   }
 
   .header_content h2 {
