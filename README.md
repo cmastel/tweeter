@@ -48,4 +48,8 @@ Over time, the following additinal features would improve the Tweeter app:
 ## Dependencies
 
 - Express
+- BodyParser
+- Chance
+- md5
 - Node 5.10.x or above
+

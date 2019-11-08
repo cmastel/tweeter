@@ -35,13 +35,14 @@ const remainingCharCounter = function() {
   }
 }
 
-// control the "button" which shows or hides the new tweet input area
+// clicking the double down arrows allows the new tweet composition area to slide down, and back up when clicked again
 const showNewTweet = function () {
   $(".new-tweet").slideToggle("slow");
   $("#show-new-tweet").css("transform", "translateY(4px)");
   $("textarea").focus();
 }
 
+// control the "button" which shows or hides the new tweet input area
 const windowScroll = function() {
   $( ".fa-chevron-circle-up" ).css("display", "inline");
 }
