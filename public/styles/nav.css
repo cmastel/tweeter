@@ -30,15 +30,18 @@ nav > .show-new-tweet {
   float: right;
 }
 
-#nav-arrows {
+.fa-angle-double-down {
   color: red;
   float: right;
+}
+
+nav .fa-angle-double-down {
   position: relative;
   top: 40px;
   left: 100px;
 }
 
-#nav-arrows:hover {
+.fa-angle-double-down:hover {
   box-shadow: 0 0 15px #FFFFFF;
 }
 

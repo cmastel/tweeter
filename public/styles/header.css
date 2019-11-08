@@ -1,4 +1,4 @@
-.id_header {
+.avatar_header {
   background-color: #FFC20A;
   background-image: url("/images/p1.png");
   height: 400px;
@@ -18,35 +18,31 @@
 
 /* position the show-new-tweet in the header */
 /* .new-tweet-words is defined in nav.css */
-.id_header > .show-new-tweet {
+.avatar_header > .show-new-tweet {
   position: relative;
   bottom: 380px;
   right: 40px;
 }
 
-/* position the arrows to show new tweet */
-#header-arrows {
-  color: red;
-  float: right;
+/* position the new tweet arrows */
+/* arrow styling and hover functionality are in the */
+/* nav.css file */
+.avatar_header .fa-angle-double-down {
   position: relative;
   top: 40px;
   left: 100px;
 }
 
-#header-arrows:hover {
-  box-shadow: 0 0 15px #FFFFFF;
-}
-
 
 @media only screen and (min-width: 960px) {
-  .id_header {
+  .avatar_header {
     width: 40%;
     margin-top: 160px;
     margin-left: 5%;
     float: left;
   }
 
-  .id_header > .show-new-tweet {
+  .avatar_header > .show-new-tweet {
     display: none;
   }
 }

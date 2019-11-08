@@ -65,7 +65,7 @@ const loadTweets = function(last=false) {
        const lastKey = Object.keys(data).reverse()[0];
        const tweet = data[lastKey];
        const $tweet = createTweetElement(tweet);
-       $('#tweets-container').prepend($tweet);
+       $('.tweets-container').prepend($tweet);
      }
    })
  } else {
@@ -76,7 +76,7 @@ const loadTweets = function(last=false) {
      success: (data) => {
        for (let tweet of data) {
          const $tweet = createTweetElement(tweet);
-         $('#tweets-container').prepend($tweet);
+         $('.tweets-container').prepend($tweet);
        }
      }
    })

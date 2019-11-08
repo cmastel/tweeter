@@ -9,22 +9,6 @@ $(document).ready(function() {
   loadTweets();
   $("form").submit(newTweet);
   $("textarea").on('keyup', remainingCharCounter);
-  
-  // show new tweet slider
-  $("#nav-arrows").click(
-    function() {
-      $(".new-tweet").slideToggle("slow");
-      $("#show-new-tweet").css("transform", "translateY(4px)");
-      $("textarea").focus();
-      }   
-  );
-
-  $("#header-arrows").click(
-    function() {
-      $(".new-tweet").slideToggle("slow");
-      $("#show-new-tweet").css("transform", "translateY(4px)");
-      $("textarea").focus();
-      }   
-  );
+  $(".fa-angle-double-down").click(showNewTweet);
 
 });

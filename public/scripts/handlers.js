@@ -35,3 +35,9 @@ const remainingCharCounter = function() {
   }
 }
 
+// control the "button" which shows or hides the new tweet input area
+const showNewTweet = function () {
+  $(".new-tweet").slideToggle("slow");
+  $("#show-new-tweet").css("transform", "translateY(4px)");
+  $("textarea").focus();
+}
