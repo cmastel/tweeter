@@ -41,3 +41,13 @@ const showNewTweet = function () {
   $("#show-new-tweet").css("transform", "translateY(4px)");
   $("textarea").focus();
 }
+
+const windowScroll = function() {
+  $( ".fa-chevron-circle-up" ).css("display", "inline");
+}
+
+const scrollButtonClicked = function() {
+  $( ".fa-chevron-circle-up" ).slideToggle("fast");
+  $('html, body').animate({scrollTop:0}, 'fast');
+  showNewTweet();
+}

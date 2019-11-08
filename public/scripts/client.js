@@ -10,19 +10,8 @@ $(document).ready(function() {
   $("form").submit(newTweet);
   $("textarea").on('keyup', remainingCharCounter);
   $(".fa-angle-double-down").click(showNewTweet);
-
-
-  $( window ).scroll(function() {
-    $( ".fa-chevron-circle-up" ).css("display", "inline");
-  });
-
-
-  $('.scroll-button').click(function(){
-    $('html, body').animate({scrollTop:0}, 'slow');
-    showNewTweet();
-    $( ".fa-chevron-circle-up" ).css("display", "none");
-    return false;
-});
+  $( window ).scroll(windowScroll);
+  $('.scroll-button').click(scrollButtonClicked);
 
 
 });

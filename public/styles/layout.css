@@ -45,7 +45,7 @@ body {
 
 @media only screen and (min-width: 960px) {
   .container {
-    width: 45%;
+    width: 60%;
     margin-top: 160px;
     margin-right: 5%;
     float: right;
