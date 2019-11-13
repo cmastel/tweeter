@@ -82,3 +82,13 @@ const loadTweets = function(last=false) {
    })
  }
 }
+
+const emptyTweet = function() {
+  $("#error-message").text('🚨 There was no content in your tweet. 🚨');
+  $("#error-message").slideDown("medium");
+}
+
+const longTweet = function() {
+  $("#error-message").text('🚨 Your tweet is longer than 140 characters. 🚨');
+  $("#error-message").slideDown("medium");
+}

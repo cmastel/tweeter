@@ -5,11 +5,11 @@ const newTweet = function(event) {
   event.preventDefault();
   const userInput = $(this).serialize().slice(5);
   if (!userInput) {
-    $("#error-message").text('🚨 There was no content in your tweet. 🚨');
-    $("#error-message").slideDown("medium");
+    emptyTweet();
   } else if (userInput.length > 140) {
-    $("#error-message").text('🚨 Your tweet is longer than 140 characters. 🚨');
-    $("#error-message").slideDown("medium");
+    // $("#error-message").text('🚨 Your tweet is longer than 140 characters. 🚨');
+    // $("#error-message").slideDown("medium");
+    longTweet();
   } else {
     $.ajax({
       method: 'POST',
