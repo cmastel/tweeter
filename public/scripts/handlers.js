@@ -7,8 +7,6 @@ const newTweet = function(event) {
   if (!userInput) {
     emptyTweet();
   } else if (userInput.length > 140) {
-    // $("#error-message").text('🚨 Your tweet is longer than 140 characters. 🚨');
-    // $("#error-message").slideDown("medium");
     longTweet();
   } else {
     $.ajax({
