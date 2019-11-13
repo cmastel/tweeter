@@ -21,6 +21,11 @@ const timeAgo = function(originalDate) {
   } else {
     timeAgo = [seconds, 'seconds'];
  }
+
+if (timeAgo[0] === 1) {
+  timeAgo[1] = timeAgo[1].slice(0, -1);
+}
+
  return timeAgo;
 }
 
