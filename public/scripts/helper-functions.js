@@ -32,16 +32,16 @@ const escape =  function(str) {
 }
 
 // createTweetElement provides the html to create a new tweet article
-const createTweetElement = function(tweetOjbect) {
- const deltaTime = timeAgo(tweetOjbect.created_at)
+const createTweetElement = function(tweetObject) {
+ const deltaTime = timeAgo(tweetObject.created_at)
  const markup = `
  <article class="tweets">
    <header>
-    <img src="${tweetOjbect.user.avatars}">
-    <div id="name">${escape(tweetOjbect.user.name)}</div>
-    <div id="username">${escape(tweetOjbect.user.handle)}</div>
+    <img src="${tweetObject.user.avatars}">
+    <div id="name">${escape(tweetObject.user.name)}</div>
+    <div id="username">${escape(tweetObject.user.handle)}</div>
    </header>
-   <p>${escape(tweetOjbect.content.text)}</p>
+   <p>${escape(tweetObject.content.text)}</p>
    <footer>
      ${Math.floor(deltaTime[0])} ${deltaTime[1]} ago
        <i class="fa fa-heart"></i>

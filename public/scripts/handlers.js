@@ -3,7 +3,7 @@
 // is not saved to the database
 const newTweet = function(event) {
   event.preventDefault();
-  const userInput = $( this ).serialize().slice(5);
+  const userInput = $(this).serialize().slice(5);
   if (!userInput) {
     $("#error-message").text('🚨 There was no content in your tweet. 🚨');
     $("#error-message").slideDown("medium");
@@ -14,12 +14,12 @@ const newTweet = function(event) {
     $.ajax({
       method: 'POST',
       url: '/tweets/',
-      data: $( this ).serialize(),
+      data: $(this).serialize(),
       success: () => {
         this.reset();
         loadTweets(true); // the optional parameter true ensures only the new tweet is prepended to the list
         $("#error-message").slideUp("medium");
-
+        $(".counter").text(140);
       }
     })
   }
@@ -28,10 +28,13 @@ const newTweet = function(event) {
 // show the number of characters remaining in a new tweet
 // if the input is greater than 140, the value goes red
 const remainingCharCounter = function() {
-  let remainingChars = 140 - $( this ).val().length;
-  $( this ).parent().children( ".counter" ).text( remainingChars );
+  let remainingChars = 140 - $(this).val().length;
+  $(this).parent().children(".counter").text(remainingChars);
   if (remainingChars < 0) {
-    $( this ).parent().children( ".counter" ).css("color", "red");
+    $(this).parent().children(".counter").css("color", "red");
+  }
+  if (remainingChars >= 0) {
+    $(this).parent().children(".counter").css("color", "#545149");
   }
 }
 
@@ -44,11 +47,11 @@ const showNewTweet = function () {
 
 // control the "button" which shows or hides the new tweet input area
 const windowScroll = function() {
-  $( ".fa-chevron-circle-up" ).css("display", "inline");
+  $(".fa-chevron-circle-up").css("display", "inline");
 }
 
 const scrollButtonClicked = function() {
-  $( ".fa-chevron-circle-up" ).slideToggle("fast");
+  $(".fa-chevron-circle-up").slideToggle("fast");
   $('html, body').animate({scrollTop:0}, 'fast');
   showNewTweet();
 }

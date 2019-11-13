@@ -1,4 +1,4 @@
-.avatar_header {
+.avatar-header {
   background-color: #FFC20A;
   background-image: url("/images/p1.png");
   height: 150px;
@@ -6,19 +6,19 @@
   z-index: 2;
 }
 
-.header_content {
+.header-content {
   text-align: center;
   padding-top: 1em;
 }
 
-.header_content h2 {
+.header-content h2 {
   float: left;
   position: relative;
   bottom: 20px;
   left: 30px;
 }
 
-.header_content img {
+.header-content img {
   width: 100px;
   float: left;
   position: relative;
@@ -27,7 +27,7 @@
 
 /* position the show-new-tweet in the header */
 /* .new-tweet-words is defined in nav.css */
-.avatar_header > .show-new-tweet {
+.avatar-header > .show-new-tweet {
   float: right;
   position: relative;
   right: 50px;
@@ -36,20 +36,20 @@
 /* position the new tweet arrows */
 /* arrow styling and hover functionality are in the */
 /* nav.css file */
-.avatar_header .fa-angle-double-down {
+.avatar-header .fa-angle-double-down {
   position: relative;
   top: 40px;
   left: 100px;
 }
 
 @media only screen and (max-width: 420px) {
-  .header_content img {
+  .header-content img {
     width: 75px;
     position: relative;
     left: 20px;
   }
 
-  .header_content h2 {
+  .header-content h2 {
     font-size: .9em;
     position: relative;
     bottom: 20px;
@@ -60,7 +60,7 @@
     display: none;
   }
 
-  .avatar_header i.fa-angle-double-down {
+  .avatar-header i.fa-angle-double-down {
     display: block;
     text-align: right;
     position: fixed;
@@ -72,7 +72,7 @@
 
 
 @media only screen and (min-width: 960px) {
-  .avatar_header {
+  .avatar-header {
     width: 25%;
     height: 400px;
     margin-top: 160px;
@@ -80,18 +80,18 @@
     float: left;
   }
 
-  .header_content img {
+  .header-content img {
     width: 230px;
     position: relative;
     left: 10px;
   }
 
-  .header_content h2 {
+  .header-content h2 {
     position: relative;
     left: 50px;
   }
 
-  .avatar_header > .show-new-tweet {
+  .avatar-header > .show-new-tweet {
     display: none;
   }
 }
